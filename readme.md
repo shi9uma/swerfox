@@ -1,118 +1,62 @@
-# 【幼盾】个性化图片徽章服务！
+# ~~【幼盾】~~【杉蔚狐】个性化图片徽章服务！
 
-![](https://unv-shield.librian.net/api/unv_shield?repo=RimoChan/Librian)
-![](https://unv-shield.librian.net/api/unv_shield?txt=代码质量:好)
-![](https://unv-shield.librian.net/api/unv_shield?txt=萝莉控:是)
+![](https://unv-shield.librian.net/api/unv_shield?txt=赞美莉沫酱！&scale=4&anime=3)
 
-你对方形的徽章感到无聊了吗？想要定制属于自己的开源项目徽章了吗？
+**这里再放三个徽章：斯达数、"代码质量：抽象"、"黄毛狐狸控：是"**
 
-快来使用<b>unv-shield</b>吧！
-
-<b>unv-shield</b>提供包含自定义图片的徽章服务，可以让你的项目主页更加个性化！
+你还在因为 [Shanwer](https://github.com/Shanwer) 能量不足而感到难过吗？想要在自己的项目中插入 sw 徽章（语录）吗？快来使用 swerfox 个性化图片徽章服务吧！
 
 
-## 使用方法
+## 使用方法！
 
 
-```
-![](https://unv-shield.librian.net/api/unv_shield?repo=你的名字/repo的名字)
+```markdown
+![](https://domain.com/api/swerfox?repo=你的名字/repo的名字)
+
+例如：![](https://majo.im/api/swerfox?repo=shi9uma/swerfox)
 ```
 
-把这行代码加入到你的readme中，就会显示成一个徽章，像是这样——
+把这行代码加入到你的 readme 中，就会显示成一个徽章，像是这样：
 
-![](https://unv-shield.librian.net/api/unv_shield?repo=RimoChan/Librian)
+**这里放一个展示 repo 斯达数的徽章**
 
+## 自定义！
 
-## 自定义
+通过向 url 传递不同的参数来自定义你的徽章，首先魔法起手式：`https://domain.com/api/swerfox?args`，后面接的 args 参数可以如下（使用 `&` 符来连接多个参数）！
 
-你可以通过向url传递不同的参数来自定义你的徽章: 
-
-- `url`  
-    > 样例: `url=https://avatars.githubusercontent.com/u/20064807`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?repo=RimoChan/Librian&url=https://avatars.githubusercontent.com/u/20064807)  
-     
-    把图片换掉。
-
-- `backcolor`   
-    > 样例: `backcolor=0000ff`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?backcolor=0000ff)
-
-    设定背景颜色。  
-    默认的背景颜色会随图片改变，是自动生成的。  
-
-- `fontcolor`  
-    > 样例: `fontcolor=0000ff`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?fontcolor=0000ff)  
-
-    设定文字颜色。  
-    默认的文字颜色取决于背景颜色，通常使用白字，背景颜色的亮度高时使用黑字。  
-
-- `scale`  
-    > 样例: `scale=2`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?scale=2)  
-
-    让你的徽章整个等比例变大。
-
-- `txt`  
+- `url`：`url=https://avatars.githubusercontent.com/u/16631550`，换显示的图标！**这里放一个换了图标的徽章**
+    
+- `backcolor`：`backcolor=0000ff`，来设定背景颜色，默认的背景颜色会随图片改变，是自动生成的！**这里放一个换了背景颜色的徽章**
+    
+- `fontcolor`：`fontcolor=0000ff`，来设定文字的颜色，默认的文字颜色取决于背景颜色，通常使用白字，背景颜色的亮度高时使用黑字！**这里放一个换了字体颜色的徽章**
+    
+- `scale`：`scale=2`，来让你的徽章整个等比例放大！**这里放一个放大了的徽章**
+    
+- `text`：`text=草`，来显示徽章的文本！**这里放一个显示文本的徽章**
+    
     > 样例: `txt=你好呀!`  
     > ![](https://unv-shield.librian.net/api/unv_shield?txt=你好呀!) 
-     
+    
     把字换掉。
-
-- `border`  
-    > 样例: `border=4`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?border=4)  
-
-    设定边距和阴影扩散范围。  
     
-- `barlen`  
-    > 样例: `barlen=100`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?barlen=100)  
-
-    设定徽章的文字条的长度。  
-    默认的长度是由文本决定的。  
-
-- `size`  
-    > 样例: `size=50`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?size=50)  
-    设定徽章尺寸，但是字号不会变。
-
-- `fontsize`  
-    > 样例: `fontsize=30`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?fontsize=30)  
+- `border`：`border=4`，来设置徽章的边距和阴影扩散范围！**太麻烦了我不想写了**
     
-    设定字体大小.
+- `barlen`：`barlen=10`，来设定徽章的文字条的长度，默认的长度是由文本决定的！
+    
+- `size`：`size=50`，设定徽章尺寸，但是字号不会变！
+    
+- `fontsize`：`frontsize=30`，可以设定字体大小了！
+    
+- `barradius`：`barradius=999`，设定文本条的援交！
+    
+- `anime`：`anime=5`，还可以设定文本条弹出的动画时间！
+    
+- `shadow`：`shadow=0.9`，设定背景阴影的浓度！
 
-- `barradius`  
-    > 样例: `barradius=999`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?barradius=999)  
-
-    设定文本条的援交。  
-
-- `anime`  
-    > 样例: `anime=5`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?anime=5)  
-
-    设定文本条弹出的动画时间。
-
-- `shadow`  
-    > 样例: `shadow=0.9`  
-    > ![](https://unv-shield.librian.net/api/unv_shield?shadow=0.9)  
-
-    设定背景阴影的浓度。
+- `repo`：`repo=account_name/repo_name`，**特殊参数**，可以主动获得对应 repo 的名字和斯达数！
 
 
-## 特殊参数
-
-- `repo`  
-    将文本替换为对应Github Repo的star数量。
-
-嗯，我先做了这一个，之后再一个一个加吧。
-
-如果你心急如焚，也可以给这个Repo提交PR，让<b>unv-shield</b>支持更多数据源。
-
-
-## 服务架构
+## 服务架构看不懂啦！
 
 ![./文档/q.png](./文档/q.png)
 
@@ -122,6 +66,6 @@
 - 活死人的呼声是一个定时触发器，用来防止unv-shield冷启动。
 
 
-## 赞助
+## ❤赞助❤
 
-如果你觉得<b>unv-shield</b>对你的工作或学习有所帮助，欢迎往作者的邮箱里发萝莉图片以表达谢意。
+如果你觉得 swerfox 对你的工作或学习有所帮助，欢迎往作者：[RimoChan](https://github.com/RimoChan) 的邮箱 <[the@librian.net](mailto:the@librian.net)> 里发萝莉图片以表达谢意！**（不要发给我！）**
