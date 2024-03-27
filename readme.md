@@ -4,7 +4,7 @@
 
 **这里再放三个徽章：斯达数、"代码质量：抽象"、"黄毛狐狸控：是"**
 
-你还在因为 [Shanwer](https://github.com/Shanwer) 能量不足而感到难过吗？想要在自己的项目中插入 sw 徽章（语录）吗？快来使用 swerfox 个性化图片徽章服务吧！
+你还在因为 [Shanwer](https://github.com/Shanwer) 能量不足而感到难过吗？想要在自己的项目中插入 sw 徽章（语录）吗？快来使用酥帕性能的杉蔚数据交互终端 swerfox ~~个性化图片徽章~~ 服务吧！
 
 
 ## 使用方法！
@@ -38,7 +38,7 @@
 
 ## 头脑风暴！
 
-我能不能把下面这些来自天才聪明幼女莉沫酱的东西全部注入到杉蔚狐里呢~~（说人话就是 apis 工具集！）~~，我要以 Shanwer 为中心，让全世界都喜欢上 Shanwer！
+我能不能把下面这些来自天才聪明幼女莉沫酱的东西全部注入到杉蔚狐里呢 ~~（说人话就是 apis 工具集！）~~，我要以 Shanwer 为中心，让全世界都喜欢上 Shanwer！
 
 -   自动 sw 翻译机！将你说的话 sw 化！[RimoChan/yinglish](https://github.com/RimoChan/yinglish.git)
 -   e77h1！意大利面拌 42 号混凝土！[RimoChan/i7h](https://github.com/RimoChan/i7h.git)，[RimoChan/bnhhsh](https://github.com/RimoChan/bnhhsh.git)
@@ -51,12 +51,18 @@
 
 ## 服务架构看不懂啦！
 
-![./文档/q.png](./文档/q.png)
+![](https://raw.githubusercontent.com/RimoChan/unv-shield/slave/文档/q.png)
 
 - 服务的核心是Azure上的一个Function App<sub>(FAAS)</sub>。
 - 用cloudflare做了一层HTTP缓存，可以省钱。
 - 通过GitHub访问时还会过一层Camo缓存。
 - 活死人的呼声是一个定时触发器，用来防止unv-shield冷启动。
+
+## 优水寄
+
+1.   `git clone https://github.com/shi9uma/swerfox.git`，`cd swerfox`
+2.   `python -m venv swerfox-venv`，`swerfox-venv/Scripts/activate`
+3.   `pip`
 
 ## 莱森斯
 
