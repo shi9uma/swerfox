@@ -58,12 +58,6 @@
 - 通过GitHub访问时还会过一层Camo缓存。
 - 活死人的呼声是一个定时触发器，用来防止unv-shield冷启动。
 
-## 优水寄
-
-1.   `git clone https://github.com/shi9uma/swerfox.git`，`cd swerfox`
-2.   `python -m venv swerfox-venv`，`swerfox-venv/Scripts/activate`
-3.   `pip`
-
 ## 莱森斯
 
 自豪地使用 ![](https://unv-shield.librian.net/api/unv_shield?txt=Je-Suis-Le-Deluge&scale=2)![](https://unv-shield.librian.net/api/unv_shield?repo=RimoChan/Je-Suis-Le-Deluge&scale=2)协议！

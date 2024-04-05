@@ -7,18 +7,28 @@ repo: https://github.com/shi9uma/swerfox.git
 description: 各种装饰器
 '''
 
+# sys
 import sys
 import logging
 
-def decorator_logging(func):
+from sympy import true
+
+# third-part
+from utils.聪明幼女 import 超
+
+
+# functions
+某科学的 = 超
+
+def 观测之石(func):
     '''
     日志装饰器
     '''
-    def wrapper(*args):
+    def wrapper(*args, **kwargs):
         try:
-            result = func(*args)
+            result = func(*args, **kwargs)
             return result
         except Exception as e:
-            logging.error(e)
+            logging.error(e, stack_info = true)
             sys.exit(1)
     return wrapper
