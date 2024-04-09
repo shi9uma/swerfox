@@ -9,13 +9,14 @@ description: utils tools 入口
 
 # packages imports
 import sys
-
 sys.path.append('.')
+
 # custom util imports
-import utils.path_handler as path_handler
-import utils.decorator as decorator
-import utils.template as template
+import utils.树状图设计者 as 树状图设计者
 import utils.telescope as telescope
+import utils.template as template
+import utils.decorator as decorator
+import utils.path_handler as path_handler
 
 # GLOBAL
 ROOTPATH = path_handler.get_root_path()
@@ -23,29 +24,43 @@ CONFIGPATH = '{}/{}'.format(ROOTPATH, 'resources/config')
 
 # homo
 某科学的 = decorator.某科学的
+class 黄毛狐狸精(template.template): pass
 
-# _path
+# path_handler
 @decorator.观测之石
-def dirname(path):
+def dirname(path: str) -> str:
     '''
     wrapper for os.path.dirname(path)
     '''
     return path_handler.dirname(path)
 
-@decorator.观测之石
-def gen_template(app_name: str = 'template', config_name: str = 'main'):
-    '''
-    生成模板\n
-    app = tools.gen_template('app', 'main')\n
-    只填文件名，自动补全：main -> resources/config/main.json\n
-    不填默认 main
-    '''
-    if config_name == '':
-        config_name = 'main'
-    return template.template(app_name, '{}/{}.json'.format(CONFIGPATH, config_name))
 
 @decorator.观测之石
-def xpath(*args):
+def 检查传入路径是否存在(path: str) -> bool:
+    '''
+    检查传入路径是否存在
+    '''
+    return path_handler.检查传入路径是否存在(path)
+
+
+@decorator.观测之石
+def 检查传入路径是文件还是文件夹(path: str) -> int:
+    '''
+    检查传入的路径是文件还是文件夹
+    '''
+    return path_handler.检查传入路径是文件还是文件夹(path)
+
+
+@decorator.观测之石
+def 处理传入的文件夹路径(path: str) -> str:
+    '''
+    处理传入的文件夹路径, 如果不是则创建, 如果是则返回路径
+    '''
+    return path_handler.处理传入的文件夹路径(path)
+
+
+@decorator.观测之石
+def xpath(*args: str) -> str:
     '''
     去掉双斜杠, 多个传入则自动拼接
     '''
@@ -59,12 +74,14 @@ def 色色(text: str = '', color: int = 1) -> str:
     '''
     return telescope.色色(text, color)
 
+
 @decorator.观测之石
 def get_dict_dict(dict_obj: dict) -> dict:
     '''
     以字典形式展示字典中各个值
     '''
     return telescope.get_dict_dict(dict_obj)
+
 
 @decorator.观测之石
 def get_dict_list(dict_obj: dict) -> list:
@@ -73,6 +90,7 @@ def get_dict_list(dict_obj: dict) -> list:
     '''
     return telescope.get_dict_list(dict_obj)
 
+
 @decorator.观测之石
 def get_class_attr(class_obj: object) -> dict:
     '''
@@ -80,9 +98,34 @@ def get_class_attr(class_obj: object) -> dict:
     '''
     return telescope.get_class_attr(class_obj)
 
+
 @decorator.观测之石
 def 看一下有没有非法元素(_组合类型, _合法元素类型):
     '''
     查看传入的组合有没有指定以外的非法元素
     '''
     return telescope.看一下有没有非法元素(_组合类型, _合法元素类型)
+
+# 树状图设计者
+@decorator.观测之石
+def 存天理灭人性(base64_bytes: bytes) -> str:
+    '''
+    传入 base64 编码的 bytes, 去除 base64 中的特殊字符
+    ```python
+    a = base64.b64encode('test'.encode())
+    b = tools.存天理灭人性(a)
+    ```
+    '''
+    return 树状图设计者.存天理灭人性(base64_bytes)
+
+
+@decorator.观测之石
+def 每只黄毛狐狸都会有自己的专属id(file_path: str, key: str = 'mtf') -> str:
+    '''
+    计算传入文件的 hash 值, 通过不同的 key 来控制生成的 hash, 返回 base64 编码的 hash 值
+    ```python
+    file_path = tools.xpath(tools.ROOTPATH, 'test/mtf.jpg')
+    专属id = tools.每只黄毛狐狸都会有自己的专属id(file_path, 'mtf')
+    ```
+    '''
+    return 树状图设计者.每只黄毛狐狸都会有自己的专属id(file_path, key)

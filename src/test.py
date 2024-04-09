@@ -7,13 +7,16 @@ repo: https://github.com/shi9uma/swerfox.git
 description: 模板
 '''
 
-
+# packages imports
 import tools
 
-def test(*args):
-    print(args)
-    print(*args)
+class mtf(tools.黄毛狐狸精):
+    def __init__(self, src_img_path):
+        super().__init__('mtf', 'mtf')
+        self.src_img_path = src_img_path
+        self.img_hash = tools.每只黄毛狐狸都会有自己的专属id(src_img_path)[:8]
+        self.img_root_path = tools.xpath(tools.ROOTPATH, 'test')    # 要改
+        self.img_work_path = tools.处理传入的文件夹路径(tools.xpath(self.img_root_path, self.img_hash))
 
-path1 = tools.ROOTPATH
-checkpoint_path = tools.xpath(path1, 'test/sam_vit_h_4b8939.pth')
-print(tools.xpath(path1, checkpoint_path))
+mtf = mtf(tools.xpath(tools.ROOTPATH, 'test/sw.jpg'))
+dir(mtf)
